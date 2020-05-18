@@ -4,7 +4,8 @@
 
 # First Step - Before you start
 
-1. Open a terminal window, and $ cd into project directory.
+1. Clone repository
+2. Open a terminal window, and $ cd into project directory.
 2. Run $ pod install in your project directory.
 3. Open App.xcworkspace and build.
 

@@ -1,5 +1,7 @@
 # IKOL-ZadanieRekutacyjne
 
+![](capture.gif)
+
 # First Step - Before you start
 
 1. Open a terminal window, and $ cd into project directory.

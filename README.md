@@ -1,4 +1,4 @@
-# IKOL-ZadanieRekutacyjne
+# Distance Calculator
 
 ![](capture.gif)
 
@@ -16,3 +16,9 @@
 3. Create Mapbox Acces Token
 4. Add token to Info.plist->MGLMapboxAccessToken
 5. Run application
+
+# TODO 
+- Add Unit Tests
+- Add CI Jarvis to repo
+- Exceptions handling with UI
+- Expand README

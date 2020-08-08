@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Mapbox
 import CoreLocation
 
 class ResultViewController: UIViewController, MGLMapViewDelegate {

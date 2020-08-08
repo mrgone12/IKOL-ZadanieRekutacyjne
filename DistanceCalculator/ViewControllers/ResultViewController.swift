@@ -8,9 +8,13 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
-class ResultViewController: UIViewController, MGLMapViewDelegate {
+class ResultViewController: UIViewController, MKMapViewDelegate{
     
+    let mapView: MKMapView = MKMapView()
+    
+    let distanceView: UIView =
     
     @IBOutlet weak var mapView: MGLMapView!
     @IBOutlet weak var distanceLabel: UILabel!

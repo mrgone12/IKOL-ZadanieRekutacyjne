@@ -8,8 +8,11 @@
 
 import Foundation
 
-struct K {
-    static let customBlueColor: String = "customBlue"
-    static let backgroundBlue: String = "backgroundBlue"
-    static let minusBackgroundBlue: String = "minusBackgroundBlue"
+struct Constans {
+    
+    struct Colors {
+        static let customBlueColor: String = "customBlue"
+        static let backgroundBlue: String = "backgroundBlue"
+        static let minusBackgroundBlue: String = "minusBackgroundBlue"
+    }
 }

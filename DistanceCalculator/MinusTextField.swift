@@ -24,7 +24,7 @@ class DecimalMinusTextField: UITextField {
     fileprivate func getAccessoryButtons() -> UIView
     {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 44))
-        view.backgroundColor = UIColor(named: K.minusBackgroundBlue)
+        view.backgroundColor = UIColor(named: Constans.Colors.minusBackgroundBlue)
         
         let minusButton = UIButton(type: UIButton.ButtonType.custom)
         let doneButton = UIButton(type: UIButton.ButtonType.custom)

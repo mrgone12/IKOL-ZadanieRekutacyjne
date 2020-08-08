@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE111B03246EC1C900591B36 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE111B02246EC1C900591B36 /* Constants.swift */; };
+		AE309C9924DF570400FABF7E /* DistanceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE309C9824DF570400FABF7E /* DistanceCalculatorTests.swift */; };
 		AE330D24246C22AE002AD25C /* CoordinatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE330D23246C22AE002AD25C /* CoordinatesViewController.swift */; };
 		AE330D26246C238D002AD25C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE330D25246C238D002AD25C /* ResultViewController.swift */; };
 		AEC3A1D22472A206002A1BD4 /* MinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3A1D12472A206002A1BD4 /* MinusTextField.swift */; };
@@ -20,8 +21,21 @@
 		AEEEAEEE246B30D9001D35D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEEAEEC246B30D9001D35D0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AE309C9B24DF570400FABF7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEEEAED6246B30D2001D35D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEEEAEDD246B30D2001D35D0;
+			remoteInfo = DistanceCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AE111B02246EC1C900591B36 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AE309C9624DF570400FABF7E /* DistanceCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistanceCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE309C9824DF570400FABF7E /* DistanceCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculatorTests.swift; sourceTree = "<group>"; };
+		AE309C9A24DF570400FABF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE330D23246C22AE002AD25C /* CoordinatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesViewController.swift; sourceTree = "<group>"; };
 		AE330D25246C238D002AD25C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		AEC3A1D12472A206002A1BD4 /* MinusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinusTextField.swift; sourceTree = "<group>"; };
@@ -37,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE309C9324DF570400FABF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEEEAEDB246B30D2001D35D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE309C9724DF570400FABF7E /* DistanceCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE309C9824DF570400FABF7E /* DistanceCalculatorTests.swift */,
+				AE309C9A24DF570400FABF7E /* Info.plist */,
+			);
+			path = DistanceCalculatorTests;
+			sourceTree = "<group>";
+		};
 		AE330D22246C224C002AD25C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				AEEEAEE0246B30D2001D35D0 /* DistanceCalculator */,
+				AE309C9724DF570400FABF7E /* DistanceCalculatorTests */,
 				AEEEAEDF246B30D2001D35D0 /* Products */,
 				C0391806E1750CF99033027A /* Pods */,
 			);
@@ -78,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				AEEEAEDE246B30D2001D35D0 /* DistanceCalculator.app */,
+				AE309C9624DF570400FABF7E /* DistanceCalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +141,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AE309C9524DF570400FABF7E /* DistanceCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE309C9F24DF570400FABF7E /* Build configuration list for PBXNativeTarget "DistanceCalculatorTests" */;
+			buildPhases = (
+				AE309C9224DF570400FABF7E /* Sources */,
+				AE309C9324DF570400FABF7E /* Frameworks */,
+				AE309C9424DF570400FABF7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE309C9C24DF570400FABF7E /* PBXTargetDependency */,
+			);
+			name = DistanceCalculatorTests;
+			productName = DistanceCalculatorTests;
+			productReference = AE309C9624DF570400FABF7E /* DistanceCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AEEEAEDD246B30D2001D35D0 /* DistanceCalculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEEEAEF2246B30D9001D35D0 /* Build configuration list for PBXNativeTarget "DistanceCalculator" */;
@@ -132,10 +182,14 @@
 		AEEEAED6246B30D2001D35D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Piotr;
 				TargetAttributes = {
+					AE309C9524DF570400FABF7E = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AEEEAEDD246B30D2001D35D0;
+					};
 					AEEEAEDD246B30D2001D35D0 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -155,11 +209,19 @@
 			projectRoot = "";
 			targets = (
 				AEEEAEDD246B30D2001D35D0 /* DistanceCalculator */,
+				AE309C9524DF570400FABF7E /* DistanceCalculatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE309C9424DF570400FABF7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEEEAEDC246B30D2001D35D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,6 +236,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE309C9224DF570400FABF7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE309C9924DF570400FABF7E /* DistanceCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEEEAEDA246B30D2001D35D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +259,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE309C9C24DF570400FABF7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEEEAEDD246B30D2001D35D0 /* DistanceCalculator */;
+			targetProxy = AE309C9B24DF570400FABF7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AEEEAEE7246B30D2001D35D0 /* Main.storyboard */ = {
@@ -210,6 +288,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AE309C9D24DF570400FABF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UYL8Y2AQLA;
+				INFOPLIST_FILE = DistanceCalculatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myCom.DistanceCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DistanceCalculator.app/DistanceCalculator";
+			};
+			name = Debug;
+		};
+		AE309C9E24DF570400FABF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UYL8Y2AQLA;
+				INFOPLIST_FILE = DistanceCalculatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = myCom.DistanceCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DistanceCalculator.app/DistanceCalculator";
+			};
+			name = Release;
+		};
 		AEEEAEF0246B30D9001D35D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,6 +485,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE309C9F24DF570400FABF7E /* Build configuration list for PBXNativeTarget "DistanceCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE309C9D24DF570400FABF7E /* Debug */,
+				AE309C9E24DF570400FABF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AEEEAED9246B30D2001D35D0 /* Build configuration list for PBXProject "DistanceCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

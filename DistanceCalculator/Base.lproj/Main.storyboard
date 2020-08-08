@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea4-5H-Elk">
-                                        <rect key="frame" x="112" y="227" width="190" height="91"/>
+                                        <rect key="frame" x="112" y="181" width="190" height="137"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="190" id="gLU-wm-7Ry"/>
                                         </constraints>
@@ -202,70 +202,10 @@
                     <view key="view" contentMode="scaleToFill" id="Yib-HU-EUF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6B-wB-rKm" customClass="MGLMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v11"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0z-C3-gfu">
-                                <rect key="frame" x="50" y="722" width="314" height="120"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SY4-5N-4eH">
-                                        <rect key="frame" x="20" y="20" width="274" height="80"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mld-Wl-bla">
-                                                <rect key="frame" x="0.0" y="0.0" width="274" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eO9-OJ-aUG">
-                                                <rect key="frame" x="0.0" y="23" width="274" height="32"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsF-4k-ubq">
-                                                <rect key="frame" x="0.0" y="60" width="274" height="20"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" name="customBlue"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="SY4-5N-4eH" secondAttribute="trailing" constant="20" symbolic="YES" id="Mxu-aY-UIu"/>
-                                    <constraint firstItem="SY4-5N-4eH" firstAttribute="top" secondItem="K0z-C3-gfu" secondAttribute="top" constant="20" symbolic="YES" id="R7S-WB-Crn"/>
-                                    <constraint firstItem="SY4-5N-4eH" firstAttribute="leading" secondItem="K0z-C3-gfu" secondAttribute="leading" constant="20" symbolic="YES" id="cEo-pf-qoD"/>
-                                    <constraint firstAttribute="height" constant="120" id="fz9-2Y-MNI"/>
-                                    <constraint firstAttribute="bottom" secondItem="SY4-5N-4eH" secondAttribute="bottom" constant="20" symbolic="YES" id="x59-LQ-Ws8"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="y6B-wB-rKm" firstAttribute="trailing" secondItem="UAH-H2-IFE" secondAttribute="trailing" id="7BO-dB-AGe"/>
-                            <constraint firstItem="y6B-wB-rKm" firstAttribute="top" secondItem="Yib-HU-EUF" secondAttribute="top" id="Yec-yO-ImT"/>
-                            <constraint firstItem="K0z-C3-gfu" firstAttribute="leading" secondItem="Yib-HU-EUF" secondAttribute="leadingMargin" constant="30" id="a7Q-yt-vBp"/>
-                            <constraint firstAttribute="bottom" secondItem="y6B-wB-rKm" secondAttribute="bottom" id="a8s-bv-MJe"/>
-                            <constraint firstItem="y6B-wB-rKm" firstAttribute="leading" secondItem="UAH-H2-IFE" secondAttribute="leading" id="etk-tP-xaP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="K0z-C3-gfu" secondAttribute="trailing" constant="30" id="r7F-o4-fTO"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="K0z-C3-gfu" secondAttribute="bottom" constant="20" id="tyt-ZL-UPH"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UAH-H2-IFE"/>
                     </view>
                     <navigationItem key="navigationItem" id="32m-It-UGB"/>
-                    <connections>
-                        <outlet property="distanceKilometersLabel" destination="hsF-4k-ubq" id="N7c-7J-iZJ"/>
-                        <outlet property="distanceLabel" destination="eO9-OJ-aUG" id="8sz-Kg-82e"/>
-                        <outlet property="distanceView" destination="K0z-C3-gfu" id="t2i-5T-N8j"/>
-                        <outlet property="mapView" destination="y6B-wB-rKm" id="1JH-05-m5k"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9w-me-WsX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,9 +235,6 @@
         <image name="world" width="263" height="263"/>
         <namedColor name="backgroundBlue">
             <color red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="customBlue">
-            <color red="0.18431372549019609" green="0.61176470588235299" blue="0.81176470588235294" alpha="0.85000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

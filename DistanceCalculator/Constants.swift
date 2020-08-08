@@ -15,4 +15,9 @@ struct Constans {
         static let backgroundBlue: String = "backgroundBlue"
         static let minusBackgroundBlue: String = "minusBackgroundBlue"
     }
+    
+    struct Fonts {
+        static let poppinsRegular: String = "Poppins-Regular"
+        static let poppinsBold: String = "Poppins-Bold"
+    }
 }

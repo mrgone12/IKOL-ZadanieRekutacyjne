@@ -17,7 +17,6 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var secondPointLongitude: UITextField!
     @IBOutlet weak var calculateButton: UIButton!
     
-    
     private var distanceValue: Int = 0
     
     private var firstPointCoordinates: CLLocationCoordinate2D = CLLocationCoordinate2D()
@@ -42,9 +41,8 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
             textfieldTuple.textfield.delegate = self
         }
         
-        self.HideKeyboard()
+        self.hideKeyboard()
     }
-    
 
     @objc func textFieldDidChange(textField: UITextField){
         
@@ -53,31 +51,27 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
             textField.text! += "."
         }
         
-        if let index = textFieldsTupleArray.firstIndex(where: { $0.textfield == textField}){
-            if let textFieldText:String = textField.text{
-                if let textFieldDoubleValue: Double = Double(textFieldText){
+        if let index = textFieldsTupleArray.firstIndex(where: { $0.textfield == textField}) {
+            if let textFieldText:String = textField.text {
+                if let textFieldDoubleValue: Double = Double(textFieldText) {
                     if textFieldsTupleArray[index].type == "latitude" && (-90.0...90.0).contains(textFieldDoubleValue)  {                    textFieldsTupleArray[index].isCorrect = true
                         textField.setDefaultView()
-                    }
-                    else if textFieldsTupleArray[index].type == "longitude" && (-180.0...180.0).contains(textFieldDoubleValue) {
+                    } else if textFieldsTupleArray[index].type == "longitude" && (-180.0...180.0).contains(textFieldDoubleValue) {
                         textFieldsTupleArray[index].isCorrect = true
                         textField.setDefaultView()
-                    }else{
+                    } else {
                         textFieldsTupleArray[index].isCorrect = false
                         textField.setErrorView()
                     }
-                }
-                else{
+                } else {
                     textFieldsTupleArray[index].isCorrect = false
                     textField.setErrorView()
                 }
-            }
-            else{
+            } else {
                 textFieldsTupleArray[index].isCorrect = false
                 textField.setErrorView()
             }
-        }
-        else{
+        } else {
             textField.setErrorView()
         }
     }
@@ -101,17 +95,19 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToResult"{
-            let destinationVC = segue.destination as! ResultViewController
-            destinationVC.distance = distanceValue
-            destinationVC.firstPoint = firstPointCoordinates
-            destinationVC.seconPoint = secondPointCoordinates
+        if segue.identifier == "goToResult" {
+            if let destinationVC = segue.destination as? ResultViewController {
+                destinationVC.distance = distanceValue
+                destinationVC.firstPoint = firstPointCoordinates
+                destinationVC.seconPoint = secondPointCoordinates
+            }
+            
         }
     }
     
     private func checkCoordinates(ofTuplesArray: [(textfield: UITextField, isCorrect: Bool, type: String)]) -> Bool{
-        for textfieldTuple in textFieldsTupleArray{
-            if !textfieldTuple.isCorrect{
+        for textfieldTuple in textFieldsTupleArray {
+            if !textfieldTuple.isCorrect {
                 return false
             }
         }
@@ -119,8 +115,8 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func highlightIncorrectTextFields(ofTuplesArray: [(textfield: UITextField, isCorrect: Bool, type: String)]){
-        for textfieldTuple in textFieldsTupleArray{
-            if !textfieldTuple.isCorrect{
+        for textfieldTuple in textFieldsTupleArray {
+            if !textfieldTuple.isCorrect {
                 textfieldTuple.textfield.setErrorView()
             }
         }
@@ -135,19 +131,19 @@ extension CLLocationCoordinate2D {
     }
 }
 
-extension UIViewController{
+extension UIViewController {
     
-    func HideKeyboard(){
-        let Tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
-        view.addGestureRecognizer(Tap)
+    func hideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
-    @objc func DismissKeyboard(){
+    @objc func dismissKeyboard() {
         view.endEditing(true)
     }
 }
 
-extension UITextField{
+extension UITextField {
     
     func setErrorView() {
         let shake = CABasicAnimation(keyPath: "position")
@@ -156,14 +152,14 @@ extension UITextField{
         shake.repeatCount = 1
         shake.autoreverses = true
         
-        let from_point = CGPoint(x: self.center.x - xDelta, y: self.center.y)
-        let from_value = NSValue(cgPoint: from_point)
+        let fromPoint = CGPoint(x: self.center.x - xDelta, y: self.center.y)
+        let fromValue = NSValue(cgPoint: fromPoint)
         
-        let to_point = CGPoint(x: self.center.x + xDelta, y: self.center.y)
-        let to_value = NSValue(cgPoint: to_point)
+        let toPoint = CGPoint(x: self.center.x + xDelta, y: self.center.y)
+        let toValue = NSValue(cgPoint: toPoint)
         
-        shake.fromValue = from_value
-        shake.toValue = to_value
+        shake.fromValue = fromValue
+        shake.toValue = toValue
         shake.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         self.layer.add(shake, forKey: "position")
         
@@ -171,7 +167,7 @@ extension UITextField{
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 5
     }
-    func setDefaultView(){
+    func setDefaultView() {
         self.layer.borderColor = UIColor.lightGray.cgColor
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 5

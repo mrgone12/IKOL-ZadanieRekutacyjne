@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A760EC7898CB3297E2F10965 /* Pods_DistanceCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CDE2EF654925E6AC19105F /* Pods_DistanceCalculatorTests.framework */; };
 		AE111B03246EC1C900591B36 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE111B02246EC1C900591B36 /* Constants.swift */; };
 		AE309C9924DF570400FABF7E /* DistanceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE309C9824DF570400FABF7E /* DistanceCalculatorTests.swift */; };
+		AE309CA324DF575900FABF7E /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE309CA024DF575900FABF7E /* Poppins-Light.otf */; };
+		AE309CA424DF575900FABF7E /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE309CA024DF575900FABF7E /* Poppins-Light.otf */; };
+		AE309CA524DF575900FABF7E /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE309CA124DF575900FABF7E /* Poppins-Regular.otf */; };
+		AE309CA624DF575900FABF7E /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE309CA124DF575900FABF7E /* Poppins-Regular.otf */; };
+		AE309CA724DF575900FABF7E /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE309CA224DF575900FABF7E /* Poppins-Bold.otf */; };
+		AE309CA824DF575900FABF7E /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE309CA224DF575900FABF7E /* Poppins-Bold.otf */; };
 		AE330D24246C22AE002AD25C /* CoordinatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE330D23246C22AE002AD25C /* CoordinatesViewController.swift */; };
 		AE330D26246C238D002AD25C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE330D25246C238D002AD25C /* ResultViewController.swift */; };
 		AEC3A1D22472A206002A1BD4 /* MinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3A1D12472A206002A1BD4 /* MinusTextField.swift */; };
@@ -19,6 +26,7 @@
 		AEEEAEE9246B30D2001D35D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEEAEE7246B30D2001D35D0 /* Main.storyboard */; };
 		AEEEAEEB246B30D9001D35D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEEAEEA246B30D9001D35D0 /* Assets.xcassets */; };
 		AEEEAEEE246B30D9001D35D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEEAEEC246B30D9001D35D0 /* LaunchScreen.storyboard */; };
+		BF87DE71978E64ABD38211D8 /* Pods_DistanceCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B703D4D0A02AFCEB8A235474 /* Pods_DistanceCalculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37CDE2EF654925E6AC19105F /* Pods_DistanceCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DistanceCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBE0398360A8729FF072358 /* Pods-DistanceCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculator.release.xcconfig"; path = "Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		9ADD8A154879592B18C3E638 /* Pods-DistanceCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-DistanceCalculatorTests/Pods-DistanceCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE111B02246EC1C900591B36 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AE309C9624DF570400FABF7E /* DistanceCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistanceCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE309C9824DF570400FABF7E /* DistanceCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculatorTests.swift; sourceTree = "<group>"; };
 		AE309C9A24DF570400FABF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE309CA024DF575900FABF7E /* Poppins-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.otf"; sourceTree = "<group>"; };
+		AE309CA124DF575900FABF7E /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
+		AE309CA224DF575900FABF7E /* Poppins-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.otf"; sourceTree = "<group>"; };
 		AE330D23246C22AE002AD25C /* CoordinatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesViewController.swift; sourceTree = "<group>"; };
 		AE330D25246C238D002AD25C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		AEC3A1D12472A206002A1BD4 /* MinusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinusTextField.swift; sourceTree = "<group>"; };
@@ -48,6 +62,9 @@
 		AEEEAEEA246B30D9001D35D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEEEAEED246B30D9001D35D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEEEAEEF246B30D9001D35D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B703D4D0A02AFCEB8A235474 /* Pods_DistanceCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DistanceCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FD202AACEF0FDBB7801331 /* Pods-DistanceCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-DistanceCalculatorTests/Pods-DistanceCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEFF7423876E723AA991D1C9 /* Pods-DistanceCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculator.debug.xcconfig"; path = "Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A760EC7898CB3297E2F10965 /* Pods_DistanceCalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF87DE71978E64ABD38211D8 /* Pods_DistanceCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +109,9 @@
 		AEC3A1D32472E253002A1BD4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				AE309CA224DF575900FABF7E /* Poppins-Bold.otf */,
+				AE309CA024DF575900FABF7E /* Poppins-Light.otf */,
+				AE309CA124DF575900FABF7E /* Poppins-Regular.otf */,
 				AEC3A1D42472E2AF002A1BD4 /* Pacifico-Regular.ttf */,
 			);
 			path = Fonts;
@@ -102,6 +124,7 @@
 				AE309C9724DF570400FABF7E /* DistanceCalculatorTests */,
 				AEEEAEDF246B30D2001D35D0 /* Products */,
 				C0391806E1750CF99033027A /* Pods */,
+				BB29F7485448D82E027E2858 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,9 +154,22 @@
 			path = DistanceCalculator;
 			sourceTree = "<group>";
 		};
+		BB29F7485448D82E027E2858 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B703D4D0A02AFCEB8A235474 /* Pods_DistanceCalculator.framework */,
+				37CDE2EF654925E6AC19105F /* Pods_DistanceCalculatorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0391806E1750CF99033027A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				CEFF7423876E723AA991D1C9 /* Pods-DistanceCalculator.debug.xcconfig */,
+				3DBE0398360A8729FF072358 /* Pods-DistanceCalculator.release.xcconfig */,
+				C6FD202AACEF0FDBB7801331 /* Pods-DistanceCalculatorTests.debug.xcconfig */,
+				9ADD8A154879592B18C3E638 /* Pods-DistanceCalculatorTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -145,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE309C9F24DF570400FABF7E /* Build configuration list for PBXNativeTarget "DistanceCalculatorTests" */;
 			buildPhases = (
+				3BC39F5B67A393FA0D87E014 /* [CP] Check Pods Manifest.lock */,
 				AE309C9224DF570400FABF7E /* Sources */,
 				AE309C9324DF570400FABF7E /* Frameworks */,
 				AE309C9424DF570400FABF7E /* Resources */,
@@ -163,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEEEAEF2246B30D9001D35D0 /* Build configuration list for PBXNativeTarget "DistanceCalculator" */;
 			buildPhases = (
+				75A0DEB59A8EDF008AFCCC3E /* [CP] Check Pods Manifest.lock */,
 				AEEEAEDA246B30D2001D35D0 /* Sources */,
 				AEEEAEDB246B30D2001D35D0 /* Frameworks */,
 				AEEEAEDC246B30D2001D35D0 /* Resources */,
+				AE309CA924DF588C00FABF7E /* Swiftlint */,
+				AFFFDC959135A34FF5381ABE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE309CA824DF575900FABF7E /* Poppins-Bold.otf in Resources */,
+				AE309CA624DF575900FABF7E /* Poppins-Regular.otf in Resources */,
+				AE309CA424DF575900FABF7E /* Poppins-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,14 +269,99 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE309CA524DF575900FABF7E /* Poppins-Regular.otf in Resources */,
 				AEEEAEEE246B30D9001D35D0 /* LaunchScreen.storyboard in Resources */,
+				AE309CA324DF575900FABF7E /* Poppins-Light.otf in Resources */,
 				AEC3A1D52472E2AF002A1BD4 /* Pacifico-Regular.ttf in Resources */,
 				AEEEAEEB246B30D9001D35D0 /* Assets.xcassets in Resources */,
+				AE309CA724DF575900FABF7E /* Poppins-Bold.otf in Resources */,
 				AEEEAEE9246B30D2001D35D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BC39F5B67A393FA0D87E014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DistanceCalculatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75A0DEB59A8EDF008AFCCC3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DistanceCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE309CA924DF588C00FABF7E /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		AFFFDC959135A34FF5381ABE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE309C9224DF570400FABF7E /* Sources */ = {
@@ -290,6 +418,7 @@
 /* Begin XCBuildConfiguration section */
 		AE309C9D24DF570400FABF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6FD202AACEF0FDBB7801331 /* Pods-DistanceCalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +440,7 @@
 		};
 		AE309C9E24DF570400FABF7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ADD8A154879592B18C3E638 /* Pods-DistanceCalculatorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +576,7 @@
 		};
 		AEEEAEF3246B30D9001D35D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEFF7423876E723AA991D1C9 /* Pods-DistanceCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +596,7 @@
 		};
 		AEEEAEF4246B30D9001D35D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DBE0398360A8729FF072358 /* Pods-DistanceCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

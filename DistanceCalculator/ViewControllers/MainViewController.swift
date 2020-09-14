@@ -8,8 +8,7 @@
 
 import UIKit
 
-
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     @IBOutlet weak var worldImageView: UIImageView!
     @IBOutlet weak var enterButton: UIButton!
@@ -22,12 +21,12 @@ class ViewController: UIViewController {
     }
 }
 
-extension UIViewController{
+extension UIViewController {
     
-    func setCustomNavigationButton(){
+    func setCustomNavigationButton() {
         let menuBtn = UIButton(type: .custom)
-        menuBtn.setImage(UIImage(named:"arrow"), for: .normal)
-        menuBtn.addTarget(self, action: Selector(("back")), for: UIControl.Event.touchUpInside)
+        menuBtn.setImage(UIImage(named: "arrow"), for: .normal)
+        menuBtn.addTarget(self, action: #selector(back), for: UIControl.Event.touchUpInside)
         menuBtn.layer.shadowColor = UIColor.gray.cgColor
         menuBtn.layer.shadowOpacity = 0.5
         menuBtn.layer.shadowOffset = .zero
@@ -42,8 +41,7 @@ extension UIViewController{
         self.navigationItem.leftBarButtonItem = menuBarItem
     }
     
-    @objc private func back(){
+    @objc private func back() {
         self.navigationController?.popViewController(animated: true)
     }
 }
-

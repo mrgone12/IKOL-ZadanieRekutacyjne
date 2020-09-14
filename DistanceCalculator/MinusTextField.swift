@@ -8,8 +8,6 @@
 
 import UIKit
 
-import UIKit
-
 class DecimalMinusTextField: UITextField {
     
     required init?(coder aDecoder: NSCoder) {
@@ -21,8 +19,7 @@ class DecimalMinusTextField: UITextField {
         self.keyboardType = UIKeyboardType.decimalPad
     }
     
-    fileprivate func getAccessoryButtons() -> UIView
-    {
+    fileprivate func getAccessoryButtons() -> UIView {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 44))
         view.backgroundColor = UIColor(named: Constans.Colors.minusBackgroundBlue)
         
@@ -32,7 +29,7 @@ class DecimalMinusTextField: UITextField {
         doneButton.setTitle("Done", for: UIControl.State())
         
         let buttonWidth = view.frame.size.width/3
-        minusButton.frame = CGRect(x: 0, y: 0, width: buttonWidth, height: 44);
+        minusButton.frame = CGRect(x: 0, y: 0, width: buttonWidth, height: 44)
         doneButton.frame = CGRect(x: view.frame.size.width - buttonWidth, y: 0, width: buttonWidth, height: 44)
         
         minusButton.addTarget(self, action: #selector(DecimalMinusTextField.minusTouchUpInside(_:)), for: UIControl.Event.touchUpInside)
@@ -43,13 +40,11 @@ class DecimalMinusTextField: UITextField {
         
         return view
     }
-    
-   
-    
+       
     @objc func minusTouchUpInside(_ sender: UIButton!) {
 
         let text = self.text!
-        if(text.count > 0) {
+        if text.count > 0 {
             let index: String.Index = text.index(text.startIndex, offsetBy: 1)
             let firstChar = text[..<index]
             if firstChar == "-" {
@@ -62,13 +57,10 @@ class DecimalMinusTextField: UITextField {
     
     @objc func doneTouchUpInside(_ sender: UIButton!) {
         self.resignFirstResponder()
-        
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         self.inputAccessoryView = getAccessoryButtons()
     }
-
-
 }

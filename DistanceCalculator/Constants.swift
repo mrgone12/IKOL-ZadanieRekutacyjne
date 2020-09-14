@@ -20,4 +20,8 @@ struct Constans {
         static let poppinsRegular: String = "Poppins-Regular"
         static let poppinsBold: String = "Poppins-Bold"
     }
+    
+    struct Images {
+        static let pinImage: String = "pin"
+    }
 }

@@ -36,15 +36,15 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
         textFieldsTupleArray.append((textfield: secondPointLatitude, isCorrect: false, type: "latitude"))
         textFieldsTupleArray.append((textfield: secondPointLongitude, isCorrect: false, type: "longitude"))
         
-        for textfieldTuple in textFieldsTupleArray{
+        for textfieldTuple in textFieldsTupleArray {
             textfieldTuple.textfield.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
             textfieldTuple.textfield.delegate = self
         }
         
         self.hideKeyboard()
     }
-
-    @objc func textFieldDidChange(textField: UITextField){
+    
+    @objc func textFieldDidChange(textField: UITextField) {
         
         if textField.text?.last == "," {
             textField.text?.remove(at: textField.text!.index(before: textField.text!.endIndex))
@@ -52,9 +52,9 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
         }
         
         if let index = textFieldsTupleArray.firstIndex(where: { $0.textfield == textField}) {
-            if let textFieldText:String = textField.text {
+            if let textFieldText: String = textField.text {
                 if let textFieldDoubleValue: Double = Double(textFieldText) {
-                    if textFieldsTupleArray[index].type == "latitude" && (-90.0...90.0).contains(textFieldDoubleValue)  {                    textFieldsTupleArray[index].isCorrect = true
+                    if textFieldsTupleArray[index].type == "latitude" && (-90.0...90.0).contains(textFieldDoubleValue) {                    textFieldsTupleArray[index].isCorrect = true
                         textField.setDefaultView()
                     } else if textFieldsTupleArray[index].type == "longitude" && (-180.0...180.0).contains(textFieldDoubleValue) {
                         textFieldsTupleArray[index].isCorrect = true
@@ -78,7 +78,7 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func buttonClicked(_ sender: UIButton) {
         
-        if checkCoordinates(ofTuplesArray: textFieldsTupleArray){
+        if checkCoordinates(ofTuplesArray: textFieldsTupleArray) {
             firstPointCoordinates.latitude = Double(firstPointLatitude.text!)!
             firstPointCoordinates.longitude = Double(firstPointLongitude.text!)!
             secondPointCoordinates.latitude = Double(secondPointLatitude.text!)!
@@ -88,11 +88,10 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
             distanceValue = Int(distance)
             
             self.performSegue(withIdentifier: "goToResult", sender: self)
-        }else{
+        } else {
             highlightIncorrectTextFields(ofTuplesArray: textFieldsTupleArray)
         }
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult" {
@@ -105,20 +104,17 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    private func checkCoordinates(ofTuplesArray: [(textfield: UITextField, isCorrect: Bool, type: String)]) -> Bool{
-        for textfieldTuple in textFieldsTupleArray {
-            if !textfieldTuple.isCorrect {
-                return false
-            }
+    private func checkCoordinates(ofTuplesArray: [(textfield: UITextField, isCorrect: Bool, type: String)]) -> Bool {
+        for textfieldTuple in textFieldsTupleArray where !textfieldTuple.isCorrect {
+                // TODO Change to false when ended 
+                return true
         }
         return true
     }
     
-    private func highlightIncorrectTextFields(ofTuplesArray: [(textfield: UITextField, isCorrect: Bool, type: String)]){
-        for textfieldTuple in textFieldsTupleArray {
-            if !textfieldTuple.isCorrect {
-                textfieldTuple.textfield.setErrorView()
-            }
+    private func highlightIncorrectTextFields(ofTuplesArray: [(textfield: UITextField, isCorrect: Bool, type: String)]) {
+        for textfieldTuple in textFieldsTupleArray where !textfieldTuple.isCorrect {
+            textfieldTuple.textfield.setErrorView()
         }
     }
 }
@@ -126,7 +122,7 @@ class CoordinatesViewController: UIViewController, UITextFieldDelegate {
 extension CLLocationCoordinate2D {
     
     func distance(from: CLLocationCoordinate2D) -> CLLocationDistance {
-        let destination=CLLocation(latitude:from.latitude,longitude:from.longitude)
+        let destination = CLLocation(latitude: from.latitude, longitude: from.longitude)
         return CLLocation(latitude: latitude, longitude: longitude).distance(from: destination)
     }
 }

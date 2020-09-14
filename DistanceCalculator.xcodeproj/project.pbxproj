@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,11 +18,17 @@
 		AE309CA824DF575900FABF7E /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE309CA224DF575900FABF7E /* Poppins-Bold.otf */; };
 		AE330D24246C22AE002AD25C /* CoordinatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE330D23246C22AE002AD25C /* CoordinatesViewController.swift */; };
 		AE330D26246C238D002AD25C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE330D25246C238D002AD25C /* ResultViewController.swift */; };
+		AE41F73224E5943000FD6B8B /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41F73124E5943000FD6B8B /* NewViewController.swift */; };
+		AE41F73324E5943000FD6B8B /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41F73124E5943000FD6B8B /* NewViewController.swift */; };
+		AE796A0C24E1963E00A3E1C7 /* AnnotationPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE796A0B24E1963E00A3E1C7 /* AnnotationPin.swift */; };
+		AE796A0D24E1963E00A3E1C7 /* AnnotationPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE796A0B24E1963E00A3E1C7 /* AnnotationPin.swift */; };
+		AE796A1024E1F6F200A3E1C7 /* UIElementsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE796A0F24E1F6F200A3E1C7 /* UIElementsGenerator.swift */; };
+		AE796A1124E1F6F200A3E1C7 /* UIElementsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE796A0F24E1F6F200A3E1C7 /* UIElementsGenerator.swift */; };
 		AEC3A1D22472A206002A1BD4 /* MinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3A1D12472A206002A1BD4 /* MinusTextField.swift */; };
 		AEC3A1D52472E2AF002A1BD4 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEC3A1D42472E2AF002A1BD4 /* Pacifico-Regular.ttf */; };
 		AEEEAEE2246B30D2001D35D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEEAEE1246B30D2001D35D0 /* AppDelegate.swift */; };
 		AEEEAEE4246B30D2001D35D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEEAEE3246B30D2001D35D0 /* SceneDelegate.swift */; };
-		AEEEAEE6246B30D2001D35D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEEAEE5246B30D2001D35D0 /* ViewController.swift */; };
+		AEEEAEE6246B30D2001D35D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEEAEE5246B30D2001D35D0 /* MainViewController.swift */; };
 		AEEEAEE9246B30D2001D35D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEEAEE7246B30D2001D35D0 /* Main.storyboard */; };
 		AEEEAEEB246B30D9001D35D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEEAEEA246B30D9001D35D0 /* Assets.xcassets */; };
 		AEEEAEEE246B30D9001D35D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEEAEEC246B30D9001D35D0 /* LaunchScreen.storyboard */; };
@@ -52,12 +58,15 @@
 		AE309CA224DF575900FABF7E /* Poppins-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.otf"; sourceTree = "<group>"; };
 		AE330D23246C22AE002AD25C /* CoordinatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesViewController.swift; sourceTree = "<group>"; };
 		AE330D25246C238D002AD25C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		AE41F73124E5943000FD6B8B /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		AE796A0B24E1963E00A3E1C7 /* AnnotationPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationPin.swift; sourceTree = "<group>"; };
+		AE796A0F24E1F6F200A3E1C7 /* UIElementsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElementsGenerator.swift; sourceTree = "<group>"; };
 		AEC3A1D12472A206002A1BD4 /* MinusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinusTextField.swift; sourceTree = "<group>"; };
 		AEC3A1D42472E2AF002A1BD4 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		AEEEAEDE246B30D2001D35D0 /* DistanceCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEEAEE1246B30D2001D35D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEEEAEE3246B30D2001D35D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AEEEAEE5246B30D2001D35D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEEEAEE5246B30D2001D35D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AEEEAEE8246B30D2001D35D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEEEAEEA246B30D9001D35D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEEEAEED246B30D9001D35D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,11 +108,28 @@
 		AE330D22246C224C002AD25C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AEEEAEE5246B30D2001D35D0 /* ViewController.swift */,
+				AEEEAEE5246B30D2001D35D0 /* MainViewController.swift */,
 				AE330D23246C22AE002AD25C /* CoordinatesViewController.swift */,
 				AE330D25246C238D002AD25C /* ResultViewController.swift */,
+				AE41F73124E5943000FD6B8B /* NewViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AE796A0A24E1962400A3E1C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE796A0B24E1963E00A3E1C7 /* AnnotationPin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE796A0E24E1F6D600A3E1C7 /* UIElemetns */ = {
+			isa = PBXGroup;
+			children = (
+				AE796A0F24E1F6F200A3E1C7 /* UIElementsGenerator.swift */,
+			);
+			path = UIElemetns;
 			sourceTree = "<group>";
 		};
 		AEC3A1D32472E253002A1BD4 /* Fonts */ = {
@@ -140,6 +166,8 @@
 		AEEEAEE0246B30D2001D35D0 /* DistanceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				AE796A0E24E1F6D600A3E1C7 /* UIElemetns */,
+				AE796A0A24E1962400A3E1C7 /* Model */,
 				AEC3A1D32472E253002A1BD4 /* Fonts */,
 				AE330D22246C224C002AD25C /* ViewControllers */,
 				AEEEAEE1246B30D2001D35D0 /* AppDelegate.swift */,
@@ -368,6 +396,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE41F73324E5943000FD6B8B /* NewViewController.swift in Sources */,
+				AE796A0D24E1963E00A3E1C7 /* AnnotationPin.swift in Sources */,
+				AE796A1124E1F6F200A3E1C7 /* UIElementsGenerator.swift in Sources */,
 				AE309C9924DF570400FABF7E /* DistanceCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,12 +407,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE796A0C24E1963E00A3E1C7 /* AnnotationPin.swift in Sources */,
 				AE330D26246C238D002AD25C /* ResultViewController.swift in Sources */,
 				AE330D24246C22AE002AD25C /* CoordinatesViewController.swift in Sources */,
-				AEEEAEE6246B30D2001D35D0 /* ViewController.swift in Sources */,
+				AEEEAEE6246B30D2001D35D0 /* MainViewController.swift in Sources */,
+				AE796A1024E1F6F200A3E1C7 /* UIElementsGenerator.swift in Sources */,
 				AEC3A1D22472A206002A1BD4 /* MinusTextField.swift in Sources */,
 				AEEEAEE2246B30D2001D35D0 /* AppDelegate.swift in Sources */,
 				AEEEAEE4246B30D2001D35D0 /* SceneDelegate.swift in Sources */,
+				AE41F73224E5943000FD6B8B /* NewViewController.swift in Sources */,
 				AE111B03246EC1C900591B36 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
